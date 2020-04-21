@@ -1,0 +1,6 @@
+
+<% @profile = User.find(params[:id]) %>
+<p> Username: <%= @profile.username %>
+<p> Email: <%= @profile.email %>
+<br>
+<a href="./<%= @profile.id %>">View</a>

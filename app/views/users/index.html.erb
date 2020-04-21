@@ -1,0 +1,8 @@
+<h1>Users List :</h1>
+<br>
+<% @list.each do |v| %>
+<p> Username: <%= v.username %>
+<p> Email: <%= v.email %>
+<br>
+<a href="./<%= v.id %>">View</a>
+<% end %>
