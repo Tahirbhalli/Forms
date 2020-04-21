@@ -4,5 +4,6 @@
 <p> Username: <%= v.username %>
 <p> Email: <%= v.email %>
 <br>
-<a href="./<%= v.id %>">View</a>
+<%= link_to "Show", user_path(v)%>
+
 <% end %>
