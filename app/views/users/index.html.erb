@@ -1,0 +1,10 @@
+<h1>Users List :</h1>
+<br>
+<% @list.each do |v| %>
+<p> Username: <%= v.username %>
+<p> Email: <%= v.email %>
+<br>
+<%= link_to "Show", user_path(v)%>
+<%= link_to "Edit", edit_user_path(v)%>
+
+<% end %>

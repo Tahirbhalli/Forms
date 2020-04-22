@@ -1,0 +1,7 @@
+
+<% @profile = User.find(params[:id]) %>
+<p> Username: <%= @profile.username %>
+<p> Email: <%= @profile.email %>
+<br>
+<%= link_to "Show", user_path(User.find(params[:id]))%>
+<%= link_to "Edit", edit_user_path(params[:id])%>
